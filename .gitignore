@@ -1,50 +1,27 @@
-# Rust
-/target/
-**/*.rs.bk
-bin/
-lcov.info
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# dependencies
+/node_modules
 
-.emails/
+# next.js
+/.next/
+/out/
 
-# Node
-node_modules/
+# production
+/build
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.npm
+.pnpm-debug.log*
 
-# Build outputs
-/dist/
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
 *.tsbuildinfo
-/bin/gws-native*
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# Test artifacts
-*.log
-coverage/
-.nyc_output/
-download.txt
-files.jsonl
-
-# Plans (local design docs)
-docs/plans/
-
-# Generated
-demo.mp4
-download.html
+next-env.d.ts
