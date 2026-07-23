@@ -1,13 +1,13 @@
 # System Architecture Dossier & Agent Blueprint
 
 > Status: Strategic implementation blueprint for multi-system orchestration.  
-> Scope: Session-derived architecture direction not a claim that all listed systems are currently deployed in this repository.
+> Scope: Session-derived architecture direction. This is not a claim that all listed systems are currently deployed in this repository.
 
 ## 1. Executive Summary
 
 This repository now includes a synchronized blueprint for a modular agent-routed platform that aligns:
 
-- Agent orchestration (LangGraph/LangSwarm/LangChain/OpenHands/Hermes/Kimi/Rork)
+- Agent orchestration frameworks and specialist agents (LangGraph/LangSwarm/LangChain/OpenHands/Hermes/Kimi/Rork)
 - Universal MCP routing (local + remote tool transports)
 - Cloudflare edge execution (Workers Durable Objects Hyperdrive D1 Vectorize KV R2 Queues)
 - Google ecosystem integration (Gemini GCP Firebase)
@@ -65,7 +65,11 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 
 8. **Observability + Key Risks**
    - Shared trace IDs across LangSmith and LangFuse
-   - Risks: handoff loops auth-scope drift prompt-version drift fan-out cost blowups
+   - Risks:
+     - handoff loops
+     - auth-scope drift
+     - prompt-version drift
+     - fan-out cost blowups
 
 ### Module B — Cloudflare Edge Data Plane
 
@@ -76,7 +80,10 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 5. **DevOps**: Wrangler-based deploy promotion (preview/staging/prod)
 6. **Monetization**: Event metering from queue consumers
 7. **Tracking**: Runtime/changelog feed monitoring
-8. **Risks**: Hyperdrive misconfig vector index drift Durable Object hot keys
+8. **Risks**:
+   - Hyperdrive misconfig
+   - vector index drift
+   - Durable Object hot keys
 
 ### Module C — Google AI / GCP / Firebase Control Plane
 
@@ -87,7 +94,10 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 5. **DevOps**: Infrastructure checks for Cloud Run/GKE/infra definitions
 6. **Monetization**: Cloud-run usage streams into billing pipelines
 7. **Tracking**: Gemini/Vertex/Firebase/GCP incident feeds
-8. **Risks**: IAM complexity model-version drift Firebase rule misconfiguration
+8. **Risks**:
+   - IAM complexity
+   - model-version drift
+   - Firebase rule misconfiguration
 
 ### Module D — Local Runtime Memory & DX
 
@@ -98,7 +108,10 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 5. **DevOps**: pre-commit/CI parity for local reproducibility
 6. **Monetization**: local premium metering deferred until sync
 7. **Tracking**: local dashboard subscriptions for tool/security updates
-8. **Risks**: offline merge conflicts mobile resource pressure local secret hygiene
+8. **Risks**:
+   - offline merge conflicts
+   - mobile resource pressure
+   - local secret hygiene
 
 ### Module E — GitHub DevOps Security & Growth Automation
 
@@ -109,7 +122,10 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 5. **DevOps**: CodeQL Dependabot secret scanning SBOM/provenance
 6. **Monetization**: CI validation for billing/event schema changes
 7. **Tracking**: GitHub advisories + dependency ecosystem updates
-8. **Risks**: secret leakage in logs scanner fatigue pipeline drift
+8. **Risks**:
+   - secret leakage in logs
+   - scanner fatigue
+   - pipeline drift
 
 ### Module F — Monetization Payments & Web3
 
@@ -120,7 +136,10 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 5. **DevOps**: migration tests + rollback playbooks
 6. **Monetization Engine**: metering/tax/retries/invoicing + ERC-4337/CCTP policy controls
 7. **Tracking**: payment/web3 standards/changelog feeds
-8. **Risks**: signer security oracle latency impacts regulatory drift
+8. **Risks**:
+   - signer security
+   - oracle latency impacts
+   - regulatory drift
 
 ### Module G — Observability Community & External Intelligence
 
@@ -136,7 +155,10 @@ This repository now includes a synchronized blueprint for a modular agent-routed
    - `Gemini API release notes`
    - `Stripe changelog metronome`
    - `Circle CCTP updates`
-8. **Risks**: missing correlation IDs budget overrun spikes weak feedback triage
+8. **Risks**:
+   - missing correlation IDs
+   - budget overrun spikes
+   - weak feedback triage
 
 ## 4. Final Master Synchronization Roadmap
 
