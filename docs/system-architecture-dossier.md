@@ -7,7 +7,7 @@
 
 This repository now includes a synchronized blueprint for a modular agent-routed platform that aligns:
 
-- Agent orchestration frameworks and specialist agents (LangGraph/LangSwarm/LangChain/OpenHands/Hermes/Kimi/Rork)
+- Agent orchestration frameworks and specialist agents (LangGraph/LangSwarm/LangChain/OpenHands/Hermes/Kimi/Rork) where Hermes/Kimi/Rork are treated here as external or custom agent roles to be concretely mapped during implementation.
 - Universal MCP routing (local + remote tool transports)
 - Cloudflare edge execution (Workers Durable Objects Hyperdrive D1 Vectorize KV R2 Queues)
 - Google ecosystem integration (Gemini GCP Firebase)
@@ -145,7 +145,7 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 
 1. **Core Flow**: collect -> evaluate -> tune -> redeploy
 2. **MCP/Parallel**: telemetry MCP aggregators for traces/logs/metrics
-3. **Edge/Storage**: hot metrics in D1/KV cold logs in R2
+3. **Edge/Storage**: hot metrics in D1/KV and cold logs in R2
 4. **Google/Local**: eval datasets + local note capture/sync
 5. **DevOps**: regression thresholds auto-open triage issues
 6. **Monetization**: quality-to-cost/revenue correlation dashboards
