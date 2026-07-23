@@ -19,11 +19,9 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 ## 2. Session Audit Checklist
 
 - [x] Primary Prompt: Fix failing GitHub Actions job `Automation / File Labeler (pull_request_target)`
-  - [ ] Unselected Suggestion: Not available in transcript export
 - [x] Primary Prompt: Workers integration request (Neon/Cloudflare mixed with broad tool list)
-  - [ ] Unselected Suggestion: Not available in transcript export
 - [x] Primary Prompt: Full transcript architecture synthesis request
-  - [ ] Unselected Suggestion: Not available in transcript export
+- Note: Unselected UI suggestions were not included in the available transcript export.
 
 ## 3. Technical Modules
 
@@ -32,7 +30,7 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 1. **Core Agent Execution Flow**
    - LangGraph state flow: `ingest -> classify -> plan -> delegate -> synthesize -> verify`
    - LangSwarm handles multi-agent handoffs and fallback paths
-   - Hermes/Kimi split policy-depth vs. fast retrieval/execution
+   - Hermes owns policy-heavy planning and governance checks; Kimi is assigned fast retrieval/execution tasks
    - OpenHands handles code-change execution tasks
    - Rork handles UI/app scaffolding outputs
 
@@ -153,7 +151,7 @@ This repository now includes a synchronized blueprint for a modular agent-routed
    - `site:github.com/langchain-ai/langgraph releases`
    - `Cloudflare Workers changelog`
    - `Gemini API release notes`
-   - `Stripe changelog metronome`
+   - `Stripe API changelog (including usage-based billing/Metronome updates)`
    - `Circle CCTP updates`
 8. **Risks**:
    - missing correlation IDs
