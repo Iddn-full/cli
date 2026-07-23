@@ -2,4 +2,4 @@
 "@googleworkspace/cli": patch
 ---
 
-Add a system architecture dossier document that captures the session-derived multi-module blueprint audit checklist and synchronization roadmap.
+Add a repository-aligned system architecture dossier document that captures session audit context and maps roadmap items to the Google Workspace CLI runtime and contribution model.
