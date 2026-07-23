@@ -16,6 +16,11 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 - Monetization rails (Stripe Square Circle smart-contract controls)
 - Observability (LangSmith + LangFuse)
 
+Role definitions used in this dossier:
+- **Hermes**: placeholder name for the policy-and-governance reasoning agent role.
+- **Kimi**: placeholder name for the high-speed retrieval/execution agent role.
+- **Rork**: placeholder name for the UI/app scaffolding agent role.
+
 ## 2. Session Audit Checklist
 
 - [x] Primary Prompt: Fix failing GitHub Actions job `Automation / File Labeler (pull_request_target)`
@@ -160,13 +165,13 @@ This repository now includes a synchronized blueprint for a modular agent-routed
 
 ## 4. Final Master Synchronization Roadmap
 
-1. Implement shared orchestration contracts (LangGraph + LangSwarm + MCP gateway)
-2. Harden edge data plane (Workers + Durable Objects + Hyperdrive + bound storage services)
-3. Establish dual control plane (GCP/Firebase + relational services as needed)
-4. Enforce local resilience (Termux + PM2 + local memory governance)
-5. Codify DevSecOps automation (CI gates + CodeQL + Dependabot + secret scanning)
-6. Integrate payment and settlement policy layers (Stripe/Square/Circle + contract guardrails)
-7. Close optimization loop with LangSmith/LangFuse + community telemetry inputs
+1. Implement shared orchestration contracts (LangGraph + LangSwarm + MCP gateway) with documented handoff schema and a verified handoff success rate target of >=95% in staged test runs.
+2. Harden edge data plane (Workers + Durable Objects + Hyperdrive + bound storage services) with environment-specific bindings and load-test evidence showing stable operation under representative concurrency.
+3. Establish dual control plane (GCP/Firebase + relational services as needed) with explicit ownership boundaries and access controls documented per service.
+4. Enforce local resilience (Termux + PM2 + local memory governance) with restart policies and offline queue replay tests and audited local secret-handling rules.
+5. Codify DevSecOps automation (CI gates + CodeQL + Dependabot + secret scanning) with mandatory pass/fail gates on pull requests and automated security alert triage workflows.
+6. Integrate payment and settlement policy layers (Stripe/Square/Circle + contract guardrails) with policy tests for billing correctness and settlement safety checks and exception handling playbooks.
+7. Close optimization loop with LangSmith/LangFuse + community telemetry inputs by defining regression thresholds and weekly review cadence and action-tracking for remediation items.
 
 ## 5. Implementation Notes
 
