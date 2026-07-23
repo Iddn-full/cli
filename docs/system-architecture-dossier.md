@@ -145,8 +145,3 @@ Backlog rule:
    - deliverable: CI policy compliance with zero skipped required checks
 5. Track external integration backlog as companion work
    - deliverable: separate RFC/issues for non-core platform integrations
-
-## 5. Implementation Notes
-
-- This document intentionally aligns with the repository's actual runtime and contribution rules.
-- Broad ecosystem items are preserved as backlog references only and are not represented as currently deployed `gws` architecture.
